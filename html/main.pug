@@ -1,0 +1,22 @@
+mixin topic-card(type, topic, image)
+    .main__card
+        .main__card-img 
+            img.main__card-picture(src=image, alt="")
+        .main__card-type=type
+        .main__card-topic=topic
+        .main__card-user
+            span.main__card-author Его императорское величество я 
+            span.main__card-date 00:00 1 Января 1970
+            span.main__card-views 404 Views
+        .main__card-description Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+main
+    .main 
+        +topic-card("Стиль", "Название", "../media/png/1.png")
+        +topic-card("Крутой стиль", "Ещё название", "../media/png/2.png")
+        +topic-card("Супер крутой стиль", "И ещё название", "../media/png/3.png")
+        +topic-card("Супер мега крутой стиль", "Четвёртое название", "../media/png/4.png")
+        +topic-card("Ультра супер мега крутой стиль", "Пятое название", "../media/png/5.png")
+        +topic-card("Самый крутой стиль", "Предпредпредпоследнее название", "../media/png/6.png") 
+        +topic-card("Наикрутейший стиль", "Предпредпоследнее название", "../media/png/7.png")
+        +topic-card("Наикрутейший из наикрутейших стилей", "Предпоследнее название", "../media/png/8.png")
+        +topic-card("Стиль всем стилям стиль", "Последнее название", "../media/png/9.png")
